@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+@font-face {
+    font-family: Hiroshima;
+    src: url(assets/fonts/Hiroshima.otf),
+         url(assets/fonts/Hiroshima.woff),
+         url(assets/fonts/Hiroshima.woff2);
+}
+
+:root {
+    --black: #303030;
+    --red: #990d1d;
+    --light-red: #b3142e;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif; /* Default font */
+    scroll-behavior: smooth;
+}
+
+/* ---- General ---- */
+h1 { /* Hero and section titles */
+    font-family: "Hiroshima", sans-serif;
+    font-size: clamp(3.5rem, 3.0588rem + 0.7843vw, 4rem);
+    letter-spacing: .1rem;
+    color: var(--red);
+    margin: clamp(0.625rem, -1.0294rem + 2.9412vw, 2.5rem) 0;
+}
+
+h2 { /* Quote black band */
+    font-size: 2.5rem;
+    width: 50%;
+    color: white;
+}
+
+h3 { /* Subquote black band */
+    font-size: 1.7rem;
+}
+
+h4 { /* Hero subtitle */
+    color: #ccc;
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-top: -5vh;
+}
+
+strong {
+    color: var(--red);
+}
+
+li {
+    list-style: none;
+}
+
+/* ---- Header ---- */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    height: 10vh;
+}
+
+.nav {
+    flex: 3;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.navitem {
+    font-size: 1.7rem;
+    color: #999999;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 200ms;
+}
+
+.navitem:hover, .nav-seleccionado {
+    color: var(--red);
+}
+
+/* Logo */
+.logo {
+    background-image: url(assets/images/logo-big.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-header {
+    flex: 1;  
+    height: 90%;
+}
+
+/* Hero */
+.hero {
+    height: 70vh;
+    
+    background-image: url(assets/images/cocina.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.hero-filter {
+    background-color: rgba(3, 3, 3, .5);
+    height: 40vh;
+    width: 100%;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* ---- Sections ---- */
+.section {
+    height: 1px;
+    min-height: 100vh;
+    width: 100%;
+    /* Flex Box */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.long-section {
+    min-height: 110vh;
+}
+
+.section-img {
+    flex: 2;
+    height: 100%;
+    /* Flex Box */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.polaroid {
+    flex: 0 1 80%;
+    aspect-ratio: 10/12;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    /* Flex Box */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+    box-shadow: 7px 7px 7px rgba(0,0,0,.5);
+    /* Background Image */
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.polaroid.gavilar {
+    background-image: url(assets/images/ourjourney.jpg);
+}
+.polaroid.chef {
+    background-image: url(assets/images/chef1.jpg);
+}
+.polaroid.manager {
+    background-image: url(assets/images/jasnah.jpg);
+}
+.polaroid.team {
+    background-image: url(assets/images/camareros.jpg);
+}
+.polaroid.recruiting {
+    background-image: url(assets/images/contratamos.jpg);
+}
+
+.section-img p {
+    flex: 3;
+    font-size: 1.5rem;
+}
+
+.section-img .rrss {
+    flex: 2;
+    /* Flex Box */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.section-img a {
+    margin-top: -80px;
+    height: 40px;
+    aspect-ratio: 1/1;
+}
+
+.section-img a img {
+    height: 40px;
+    transition: all 300ms ease;
+}
+
+/* Images */
+.plato-home {
+    /* Background Image */
+    background-image: url(assets/images/plato3.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-right: -20px;
+}
+
+.section-content {
+    flex: 3;
+    height: 100%;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.izq {
+    margin: 0 30px 0 150px;
+}
+
+.der {
+    margin: 0 150px 0 30px;
+}
+
+.section-content p {
+    margin: 0;
+    margin-bottom: clamp(1.25rem, 0.1471rem + 1.9608vw, 2.5rem);
+    font-size: 1.5rem;
+    /* font-size: clamp(1.2rem, 0.9353rem + 0.4706vw, 1.5rem); */
+}
+
+/* ---- Black Band ---- */
+.banda-negra {
+    min-height: 40vh;
+    background-color: var(--black);
+    color: white;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+/* ---- Reviews ---- */
+.reviews-section {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    min-height: 50vh;
+    margin: 50px 0;
+    padding: 30px 150px;
+    box-sizing: border-box;
+    border-top: 4px solid var(--red);
+    border-bottom: 4px solid var(--red);
+}
+
+.logo-reviews {
+    flex: 3;  
+    width: 300px;
+}
+
+.location, .score {
+    flex: 1;
+}
+
+.score {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.score h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 2rem;
+}
+
+.score img {
+    height: 40px;
+    margin: 0 10px;
+}
+
+.reviews {
+    flex: 6;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.light-text {
+    color: #808080;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+/* Each review */
+.review {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.profile-pic {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.review h2 {
+    color: var(--red);
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.review-score {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.review-score img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.review-content p {
+    font-size: 1.4rem;
+}
+
+/* ---- Premios ---- */
+.premios {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 55px;
+}
+
+.premios img {
+    height: 120px;
+}
+
+/* ---- Footer ---- */
+footer {
+    width: 100%;
+    min-height: 90vh;
+    background-color: var(--black);
+    padding: 50px 70px;
+    box-sizing: border-box;
+}
+
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.logo-footer {
+    width: 400px;
+}
+
+.icon {
+    color: white;
+    width: 60px;
+}
+
+.arrow-to-top {
+    width: 120px;
+}
+
+.footer-content {
+    height: 70vh;
+    /* Flex Box */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    /* Background */
+    background-image: url(assets/designs/simbolo_logo.svg);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+/* Footer contact */
+.footer-contact {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.contact-item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.contact-item img {
+    height: 2.8rem;
+    margin-right: 10px;
+}
+
+.contact-item , .footer-menu a, .footer-menu li {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+/* Footer menu */
+.footer-menu {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.footer-menu li:hover, .footer-menu li:hover a {
+    color: var(--light-red);
+}

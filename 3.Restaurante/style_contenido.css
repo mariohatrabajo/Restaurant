@@ -1,0 +1,389 @@
+/* Hero */
+.hero-team {
+    align-items: flex-start;
+    background-image: url(assets/images/team_hero.jpg);
+}
+
+.hero-filter {
+    background-color: rgba(255, 255, 255, .5);
+    height: 15vh;
+}
+
+.section-content p, .section-content-fw p {
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+/* Sections */
+.section {
+    min-height: 70vh;
+}
+
+.banda-negra {
+    min-height: 85vh;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.section-content-fw {
+    padding: 0 12%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.fw-img {
+    margin: 50px 0;
+}
+
+.fw-img img {
+    width: 100%;
+}
+
+.section-content-fw h1 {
+    font-size: 5rem;
+    margin-top: -50px;
+    margin-bottom: -10px;
+}
+
+.section-content-fw p {
+    columns: 2;
+}
+
+/* The kitchen */
+.kitchen h1 {
+    text-align: left;
+}
+
+/* ---- We are recruiting ---- */
+input {
+    outline: none;
+}
+
+input[type=text], input[type=number], select {
+    border: none;
+    border-bottom: 2px solid var(--red);
+    font-size: 1.6rem;
+    transition: 200ms;
+}
+
+.input-grande {
+    width: 100%;
+}
+
+input[type=text]:focus, input[type=number]:focus, select:focus {
+    border-bottom: 2px solid var(--light-red);
+}
+
+/* Botones */
+.botones {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+button {
+    background-color: var(--red);
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 200ms;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+button:hover {
+    background-color: var(--light-red);
+}
+
+button img {
+    height: 1.8rem;
+    margin-right: 10px;
+}
+
+#btn_cv {
+    width: 40%;
+}
+
+#btn_enviar {
+    width: 20%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ---- Menu ---- */
+.menu {
+    text-align: left;
+    width: 100%;
+    min-height: 75vh;
+}
+
+.hero-menu {
+    align-items: flex-start;
+    background-image: url(assets/images/menu_banner.jpg);
+    background-position: top;
+}
+
+.menu h1 {
+    margin: 0;
+    margin-top: 40px;
+}
+
+.menu p, .menu li, .menu strong, .menu h1 {
+    width: 30%;
+}
+
+.foto-menu {
+    height: 60vh;
+    border-top: 5px solid var(--red);
+    border-bottom: 5px solid var(--red);
+}
+
+.menu p {
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.menu li {
+    font-size: 1.5rem;
+}
+
+.degustation {
+    min-height: 115vh;
+}
+
+.strong-white {
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+}
+
+/* ---- Contact ---- */
+.hero-contact {
+    align-items: flex-start;
+    background-image: url(assets/images/contact_hero.jpg);
+    background-position: top;
+}
+
+/* Calendario */
+.section-cal {
+    flex: 2;
+    height: 100%;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.calendario {
+    width: 60%;
+    aspect-ratio: 1/1;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.cal_table {
+    width: 100%;
+    height: 80%;
+}
+
+.cal_mes {
+    background-color: var(--red);
+    border-radius: 10px;
+    height: 15%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 5px;
+}
+
+.cal_espacio, .btn-mes {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.cal_mes p {
+    flex: 3;
+}
+
+.cal_dia {
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.cal_dia:hover {
+    background-color: #e0e0e0;
+}
+
+.btn-mes, .cal_dia {
+    cursor: pointer;
+}
+
+/* Reservation Form */
+.section-content label {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.input-peque {
+    width: 100px;
+    text-align: center;
+}
+
+.input-medio {
+    width: 300px;
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Radio Buttons */
+.radio-buttons {
+    margin: 50px 0;
+}
+
+/* Radiobuttons */
+input[type=radio] {
+    padding: 0;
+    margin: 0 15px 0 0;
+    outline: none;
+}
+
+/* El label que tenga un radio al lado */
+input[type=radio]+label {
+    position: relative;
+    padding-left: 4px;
+}
+
+/* Creamos el pseudoelemento */
+input[type=radio]+label::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -31px;
+    
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    
+    background-color: white;
+    padding: 2px 2px 4px 4px;
+    border: 1px solid var(--red);
+    border-radius: 50%;
+}
+
+/* Radiobuttons cuando reciben el foco y el hover */
+input[type=radio]+label:hover::before,
+input[type=radio]:focus+label::before {
+    border: 1px solid var(--light-red);
+}
+
+/* Checkboxs y los Radiobuttons cuando estan seleccionados */
+input[type=radio]:checked+label::before {
+    background-color: var(--red);
+}
+
+#label-area, #label-interior {
+    margin-right: 100px;
+}
+
+/* Horario */
+.horario {
+    min-height: 45vh;
+}
+
+.horario h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+    width: 100%;
+}
+.horario p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 100%;
+    margin: 10px;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.flex-column {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* Contact */
+.section-contact {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.contact-content .contact-item p {
+    color: #999;
+}
+
+.text-left {
+    padding: 50px;
+    text-align: left;
+}
+
+iframe {
+    width: 100%;
+    height: 50vh;
+    border-top: 4px solid var(--red);
+    border-bottom: 4px solid var(--red);
+}

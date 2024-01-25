@@ -1,0 +1,59 @@
+@media only screen and (max-width: 1500px){
+    .izq, .der {
+        margin: 30px;
+    }
+    
+    .foto-menu {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    /* Header */
+    header, .long-section, .reviews, .premios, .footer-header, .section, .section-img, .footer-content {
+        flex-flow: column nowrap;
+    }
+    
+    .logo-header {
+        width: 100%;
+        flex: 2;
+    }
+    
+    .nav {
+        width: 100%;
+    }
+    
+    /* Black band */
+    h2 {
+        width: 80%;
+    }
+    
+    /* Sections */
+    .section-img {
+        width: 100%;
+    }
+    
+    /* Reviews */
+    .reviews-section {
+        margin-top: 20px;
+    }
+    
+    /* Menu */
+    .degustation {
+        padding-top: 100px;
+    }
+    
+    .menu {
+        margin-bottom: 20px;
+    }
+    
+    .section-cal {
+        flex-flow: row nowrap;
+        width: 100%;
+    }
+
+    .menu p, .menu li, .menu strong, .menu h1 {
+        width: 80%;
+    }
+}
